@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class AuthController extends Controller
 {
     public function Dashboard(){
-        return view('layouts.dashboard'); 
+        return view('admin.layouts.template'); 
     }
 }

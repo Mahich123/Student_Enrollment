@@ -9,4 +9,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// Route::get('dashboard', function() {
+//     return view('template');
+// });
+
 Route::get('/dash',[AuthController::class,'Dashboard']);
