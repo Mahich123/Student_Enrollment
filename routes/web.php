@@ -13,4 +13,9 @@ Route::get('/', function () {
 //     return view('template');
 // });
 
-Route::get('/dash',[AuthController::class,'Dashboard']);
+Route::get('admin/dash',[AuthController::class,'Dashboard']);
+Route::get('admin/login',[AuthController::class,'login']);
+Route::get('admin/registration',[AuthController::class,'registration']);
+Route::get('admin/signup',[AuthController::class,'signup']);
+Route::get('admin/signin',[AuthController::class,'signin']);
+Route::post('admin/create-User',[AuthController::class,'createUser']);
